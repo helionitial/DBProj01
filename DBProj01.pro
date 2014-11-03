@@ -4,20 +4,33 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = DBProj01
 TEMPLATE = app
 
-
 SOURCES += main.cpp\
-        homewindow.cpp
+        homewindow.cpp \
+    dbconnector.cpp \
+    dbquery.cpp \
+    datein.cpp \
+    finecal.cpp \
+    editcell.cpp
 
-HEADERS  += homewindow.h
+HEADERS  += homewindow.h \
+    dbconnector.h \
+    dbquery.h \
+    datein.h \
+    finecal.h \
+    editcell.h
 
-FORMS    += homewindow.ui
+FORMS    += homewindow.ui \
+    dbconnector.ui \
+    datein.ui \
+    editcell.ui
 
 OTHER_FILES += \
-    TODO.txt
+    TODO.txt \
+    dbscript.txt
